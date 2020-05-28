@@ -1,0 +1,33 @@
+{% load static %}
+<html>
+    <head>
+        <title>Graceofchrist</title>
+<link rel="stylesheet" type="text/css" href="{% static 'css/describe.css' %}">
+    </head>
+    <body>
+    <div class="header">
+        <div class="home">
+            <a href="{% url 'home' %}"> <img src="{% static 'photo\sign.png' %}"></a>
+        </div>
+        <div class="head">
+            <h1><u><span>grace of </span>christ</u></h1><br>
+            <h2><span>jesus</span> ministry</h2>
+        </div>
+    </div>
+        <div class="container">
+            
+                <div class="box"><img src="{% static 'photo/book9.jpg' %}"></div>
+                <div class="box"><img src="{% static 'photo/book5.jpg' %}"></div>
+                <div class="box"><img src="{% static 'photo/book8.jpg' %}"></div>
+           
+        </div>
+
+        <div class="button_container">
+           
+            <h1 class="description">{{val.book_name}}</h1>
+            <h1 class="description"> Rs:{{val.book_price}}</h1>
+            <a class="btn" href="{% url 'reg_one' val.id %}"><button>BuyNow</button></a>
+           
+        </div>
+    </body>
+</html>

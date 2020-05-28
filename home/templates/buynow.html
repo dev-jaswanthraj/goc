@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registration Form</title>
+	<link rel="stylesheet" href="{% static 'css/buynow.css' %}">
+</head>
+<body>
+<div class="header">
+    <div class="home">
+        <a href="{% url 'home' %}"> <img src="{% static 'photo\sign.png' %}"></a>
+    </div>
+    <div class="head">
+        <h1><u><span>grace of </span>christ</u></h1><br>
+        <h2><span>jesus</span> ministry</h2>
+    </div>
+</div>
+<form action="{% url 'save_in_db_one' %}" method="POST">
+   {% csrf_token %}
+<div class="wrapper">
+    <div class="title">
+      Address
+    </div>
+    <div class="form">
+       <div class="inputfield">
+          <label>First Name</label>
+          <input type="text" class="input" name="first_name"> 
+       </div>
+        <div class="inputfield">
+          <label>Last Name</label>
+          <input type="text" class="input" name = "last_name">
+       </div>
+       <div class="inputfield">
+         <label>Book name</label>
+         <input type="text" class="input" value="{{ book.book_name }}" name ="book_name">
+      </div>
+       <div class="inputfield">
+          <label>Phone Number</label>
+          <input type="phonenumber" class="input" name="phone_number">
+       </div>
+      <div class="inputfield">
+          <label>House No., Building Name</label>
+          <input type="text" class="input" name="building_name">
+       </div>
+
+        <div class="inputfield">
+          <label>Area,Colony</label>
+          <input type="text" class="input" name="Area_name">
+       </div>
+      <div class="inputfield">
+          <label>City</label>
+          <input type="text" class="input" name="city">
+       </div>
+      <div class="inputfield">
+          <label>Full Address</label>
+          <textarea class="textarea" name="full_add"></textarea>
+       </div>
+      <div class="inputfield">
+          <label>Pin code</label>
+          <input type="text" class="input" name="pincode">
+       </div>
+      <div class="inputfield">
+        <input type="submit" value="submit" class="btn">
+      </div>
+    </div>
+</div>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&family=Balsamiq+Sans:wght@400;700&family=Cinzel:wght@700&family=Courgette&family=Cutive&family=Fredoka+One&family=Indie+Flower&family=Itim&family=Kalam&family=Love+Ya+Like+A+Sister&family=Marcellus+SC&family=Merienda:wght@700&family=Roboto&family=Ubuntu&family=Varela+Round&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width:100%;
+  background:url( '/static/photo/prayback.jpg');
+}
+
+/*---------------------------------------------------header---------------------------------*/
+
+.head{
+  padding-top:30px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 15px;
+color:#ff4400;
+  padding-left: 50px;
+font-family: 'Cinzel', serif;
+}
+.home{
+
+  float: right;
+  padding-right: 50px;
+
+}
+.home img{
+  width: 7em;
+
+}
+.header{
+  margin: 0;
+  background: #223047;
+  width: 100%;
+  height:120px;
+}
+span{
+  color: white;
+}
+@media (max-width: 768px)
+{
+  .head{
+font-size:12px ;
+  }
+  .home img{
+    width: 5em;
+    margin-top: 10px;
+    margin-left: 20px;
+
+  }
+
+}
+/*----------------------------------------------background--------------------------*/
+
+
+
+.container-box{
+  margin-left: 25%;
+  border-radius: 10px;
+  width: 50%;
+  max-width: 80%;
+  padding: 20px;
+  color: #000000;
+  font-size: 20px;
+  text-transform: uppercase;
+background: rgba(34, 48, 71, 0.25);
+  margin-top: 30px;
+  font-family: 'Cinzel', serif;
+}
+
+form h3{
+  text-align: center;
+}
+label , form h3, form h2{
+
+
+}
+form h1,form h2{
+  text-align: center;
+  color: #000000;
+  font-family: 'Cinzel', serif;
+}
+textarea{
+  resize:none;
+  height: 150px;
+  border:none;
+}
+
+input[type=text], input[type=email],input[type=phonenumber],textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  color: white;
+  font-family:'Roboto', sans-serif;
+  background:#223047;
+  border-radius: 10px;
+  outline: none;
+  font-size: 20px;
+}
+input[type=text]:hover, input[type=email]:hover,input[type=phonenumber]:hover,textarea:hover {
+background: rgba(255, 255, 255, 0.55);
+  color: #223047;
+font-family:'Roboto', sans-serif;
+  font-size: 20px;
+}
+::placeholder {
+  color: #ffffff;
+  opacity: 1;
+  font-size: 20px;
+  font-family: 'Marcellus SC', serif;
+}
+
+button{
+  width: 100%;
+  height: 50px;
+  background: #223047;
+  font-size: 20px;
+  font-family:'Cinzel', serif;
+  color: white;
+  border-radius: 10px;
+  border: none;
+}
+button:hover{
+  background: white;
+  color: #223047;
+}
+
+
+
+@media (max-width: 768px) {
+  .container-box {
+    width: 100%;
+margin-left: 50px;
+  }
+
+}

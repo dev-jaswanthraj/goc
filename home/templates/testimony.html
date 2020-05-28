@@ -1,0 +1,215 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+      <title>Graceofchrist</title>
+      <meta charset="utf-8">
+
+
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="description" content="Grace of Christ">
+      <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+      <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+              crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <link href="{% static 'css\testimony.css' %}" rel="stylesheet" >
+
+
+  </head>
+  <style>
+    #more {display: none;}
+    </style>
+  <body>
+  <button onclick="topFunction()" id="myBtn1" title="Go to top"><img src="{% static 'photo\arrow.png'%}" id="top"></button>
+
+  <div class="navbar">
+      <a href="#" class="toggle" id="navHamburger">
+          <i class="fas fa-bars"></i>
+      </a>
+      <a href="{% url 'home' %}" class="brand">
+          <h3><u>GRACE OF </u><span><u>CHRIST</u></span></h3>
+          <br><h5>JESUS <span>MINISTRY</span></h5>
+      </a>
+      <nav>
+          <div class="right">
+              <a href="{% url 'home' %}" class="link" >HOME</a>
+              <a href="{% url 'book' %}" class="link" >BOOK</a>
+              <a href="{% url 'kids' %}" class="link">KIDS</a>
+              <a href="{% url 'event' %}" class="link">EVENT</a>
+              <a href="{% url 'prayer' %}" class="link">PRAYER</a>
+              <a href="{% url 'testimony' %}" class="link" id="active">TESTIMONY</a>
+              <a href="{% url 'galary' %}" class="link" >GALLARY</a>
+              <a href="{% url 'contact_us' %}" class="link">CONTACT US</a>
+              <a href="#" class="link">DONATION</a>
+          </div>
+      </nav>
+  </div>
+
+    <div class="testimonial-section">
+      <div class="inner-width">
+        <h1>SHEELA VIJAYKUMAR</h1>
+        <div class="testimonial-pics">
+          <img src="{% static 'photo\kidscamp4.jpg' %}" alt="test-1" class="active">
+
+        </div>
+
+        <div class="testimonial-contents">
+          <a class="testimonial active" id="test-1">
+            <p>1968ம் ஆண்டு மே 1ம் தேதி என் பெற்றோருக்கு முதல் குழந்தையாய் பிறந்தேன்.மதுரை மாவட்டத்திலுள்ள உசிலம்பட்டி என்ற சிறிய ஊரில் ஏழை ஆசிரியத்  தம்பதிக்கு மகளாக பிறந்தேன்.</p>
+              <a href="#"></a><button>Read More</button></a>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+          <div class="testimonial-section">
+              <div class="inner-width">
+                  <h1>SHEELA VIJAYKUMAR</h1>
+                  <div class="testimonial-pics">
+                      <img src="{% static 'photo\kidscamp4.jpg' %}" alt="test-1" class="active">
+
+                  </div>
+
+                  <div class="testimonial-contents">
+                      <a class="testimonial active" id="test-1">
+                          <p>1968ம் ஆண்டு மே 1ம் தேதி என் பெற்றோருக்கு முதல் குழந்தையாய் பிறந்தேன்.மதுரை மாவட்டத்திலுள்ள உசிலம்பட்டி என்ற சிறிய ஊரில் ஏழை ஆசிரியத்  தம்பதிக்கு மகளாக பிறந்தேன்.</p>
+                          <a href="#"></a><button>Read More</button></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+          <div class="testimonial-section">
+              <div class="inner-width">
+                  <h1>SHEELA VIJAYKUMAR</h1>
+                  <div class="testimonial-pics">
+                      <img src="{% static 'photo\kidscamp4.jpg' %}" alt="test-1" class="active">
+
+                  </div>
+
+                  <div class="testimonial-contents">
+                      <a class="testimonial active" id="test-1">
+                          <p>1968ம் ஆண்டு மே 1ம் தேதி என் பெற்றோருக்கு முதல் குழந்தையாய் பிறந்தேன்.மதுரை மாவட்டத்திலுள்ள உசிலம்பட்டி என்ற சிறிய ஊரில் ஏழை ஆசிரியத்  தம்பதிக்கு மகளாக பிறந்தேன்.</p>
+                          <a href="#"></a><button>Read More</button></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+
+  </div>
+  <footer>
+      <section id="options9">
+          <div class="container9">
+              <!-- first box -->
+              <div class="box9">
+                  <div class="logoname"><h3><u>GRACE OF CHRIST</u></h3><br><h5>JESUS MINISTRY</h5></div>
+
+                  <h3 id = "color">Every word of God proves true;<br>
+                      he is a shield to those who take<br>
+                      refuge in him.<br>
+                      Proverbs 30:5<br>
+                  </h3>
+              </div>
+              <!-- second box -->
+              <div class="box9">
+                  <h3 style="color:white;">Want to know more?<br>
+                      24*7 Prayers<br>
+                      99442-54902 &<br>
+                      0422-2445255<br></h3>
+                  <p id = "color">Follow Us</p>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+              <!-- third box -->
+              <div class="box9">
+                  <h3 style="color:white;">ADDRESS</h3>
+                  <h3 >Sis.Sheela Vijayakumar,<br>
+                      “Grace of Christ Jesus Trust”<br>
+                      9A, Kanniga Nagar (Upstairs),<br>
+                      Kanda Konar Layout,<br>
+                      Kavundampalayam,<br>
+                      Coimbatore – 641030<br>
+                      Tamilnadu, India.<br>
+                  </h3>
+                  <a href="{% url 'admin1' %}" style="color:#00000000;">admin1</a>
+              </div>
+
+          </div>
+      </section>
+  </footer>
+
+    <script>
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less";
+            moreText.style.display = "inline";
+          }
+        }
+
+          $('.testimonial-pics img').click(function(){
+            $(".testimonial-pics img").removeClass("active");
+            $(this).addClass("active");
+
+            $(".testimonial").removeClass("active");
+            $("#"+$(this).attr("alt")).addClass("active");
+          });
+        </script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script>
+      const navHamburger = document.querySelector('#navHamburger');
+      navHamburger.addEventListener('click', (e) => {
+          navHamburger.parentElement.classList.toggle('active');
+      })
+  </script>
+  <script>
+
+      var mybutton = document.getElementById("myBtn1");
+
+
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+          } else {
+              mybutton.style.display = "none";
+          }
+      }
+
+
+      function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+      }
+  </script>
+
+</html>
+
+
+  </body>
+</html>

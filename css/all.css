@@ -1,0 +1,57 @@
+html,body{
+    margin:0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.nav{
+font-family: Bitter;
+height: 0rem;
+min-height: 20vh;
+overflow: hidden;
+
+}
+a{
+    text-decoration: none;
+}
+.nav-menu-flex-row{
+    display: flex;
+    padding-bottom: -20px;
+}
+.nav-menu{
+    justify-content: space-between;
+}
+
+.nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+
+}
+.nav-items{
+    
+    display: flex;
+    margin: 0;
+    padding: 1.6rem 1rem ;
+}
+ul{
+    list-style-type:none;
+}
+.nav-brand{
+    
+    padding: 1.6rem;
+    font-size: 1rem 0;
+
+}
+.nav-link{
+    font-size: 1.1rem;
+    position: relative;
+    padding: 1.6rem 1rem;
+}
+
+.nav .nav-items .nav-link:hover{
+    background-color:aqua;
+   
+}
+.logo{
+padding-bottom: 20px;
+
+}

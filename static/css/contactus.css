@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&family=Balsamiq+Sans:wght@400;700&family=Cinzel:wght@700&family=Courgette&family=Cutive&family=Fredoka+One&family=Indie+Flower&family=Itim&family=Kalam&family=Love+Ya+Like+A+Sister&family=Marcellus+SC&family=Merienda:wght@700&family=Roboto&family=Ubuntu&family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+
+}
+/*-------------------------------------------- navigation ------------------------------------------------*/
+.navbar {
+
+    background: #223047;
+}
+
+.navbar div {
+    display: none;
+}
+.navbar .toggle,
+.navbar .brand {
+    display: block;
+}
+.navbar .link {
+    display: block;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+
+    color: white;
+}
+.navbar .link:hover,
+.navbar .link:active {
+    color: coral;
+    transition: 0.5s;
+
+}
+
+.navbar .brand {
+
+    width: 100%;
+    text-align: center;
+    padding: 2em;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 3px;
+
+    font-weight: bold;
+    color: white;
+}
+.navbar a {
+    text-decoration: none;
+}
+.navbar .toggle {
+    padding: 1em;
+    color: #00ffea;
+}
+.brand h3{
+
+    font-size: 35px;
+    color: #ffffff;
+    text-decoration-color: white;
+
+}
+.brand h5{
+    line-height: 4px;
+    font-size: 25px;
+    text-align: center;
+
+
+}
+.navbar .brand span{
+    color: coral;
+    text-align: center;
+
+}
+.navbar .right{
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 2px;
+    text-align: center;
+
+
+}
+@media (min-width: 1080px) {
+    .navbar {
+        display: block;
+    }
+    .navbar .left,
+    .navbar .right {
+        display: flex;
+        flex:1;
+    }
+    .navbar .link {
+        width: 100%;
+    }
+    .navbar .right {
+        justify-content: flex-end;
+    }
+    .navbar .toggle {
+        display: none;
+    }
+}
+@media (min-width: 1080px) {
+    .navbar div {
+        display: flex;
+    }
+}
+
+@media (max-width: 1080em) {
+    .navbar.active .toggle {
+        background: #223047;
+        color: white;
+    }
+    .navbar .brand {
+        text-align: center;
+        width: 100%;
+        position: relative;
+    }
+    .navbar.active div {
+        display: block;
+    }
+    .navbar .brand h3,h5{
+        font-size: 30px;
+    }
+}
+
+/*```````````````````````````````~`navigation~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#footer{
+    padding:0;
+    margin: 0;
+    line-height: 1.5;
+}
+.container9{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    background: #223047;
+    color: coral;
+}
+
+
+
+#options9{
+    margin-top: 6%;
+    margin-bottom:0%;
+}
+
+.container9{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1.5rem;
+    padding-top: 50px;
+}
+
+.box9 img{
+    width: 15rem;
+}
+
+.box9 a{
+    color:white;
+    font-size: 20px;
+}
+
+.box9{
+    padding-top: 5px;
+
+    text-align: center;
+    /*box-shadow: 5px 0px 18px #888888;*/
+}
+.logoname{
+    width: 100%;
+    float: left;
+    padding: 2em;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: white;
+    line-height: 12px;
+}
+
+.logoname h5{
+    text-decoration: none;
+    color: coral;
+}
+.box9 p{
+    text-align: center;
+    /* text-align: justify;*/
+    padding: 8px 5px 5px 8px;
+    font-size: 20px;
+    font-weight: 900;
+    color: coral;
+}
+
+
+/* media queries */
+@media(max-width: 768px){
+
+    #options9 .container9{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    #options9 .box9{
+        margin: 20px;
+    }
+
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~FOOTER~~~~~~~~~~~~~~~~`````````````````````````*/
+
+#myBtn1 {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    opacity: 0.5;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+
+}
+
+#myBtn1:hover {
+    background-color: rgb(71, 33, 97);
+}
+
+#active{
+    color:coral;
+
+}
+
+.leftcolumn{
+    width: 60%;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    padding:0;
+    height: auto;
+    margin: 10px;
+
+    border-radius: 20px;
+    }
+
+.card{
+    width:375px;
+    background: rgb(34, 48, 71);
+    height: 350px;
+    margin: 38px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 50px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px 5px #223047;
+    color: white;
+}
+.rightcolumn{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width:38%;
+    position: relative;
+    float: right;
+    height: auto;
+
+}
+
+.card h2{
+    font-family: 'Cinzel', serif;
+    color: orangered;
+}
+.card p{
+    font-size: 20px;
+    font-family: 'Merienda', cursive;
+}
+.contact-us{
+    display: flex;
+    flex-wrap: wrap;
+    width:70%;
+    background: #223047;
+    padding: 50px;
+    margin-top:50px;
+    margin-left: 50px;
+    border-radius: 30px;
+    position: relative;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px 5px #223047;
+}
+
+.title h1{
+  color: #535274;
+  letter-spacing: 5px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.form,
+.form-items{
+  width: 100%;
+}
+
+.form-items .input{
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 15px 40px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 0px;
+  outline: none;
+  border-radius: 30px;
+}
+
+.form-items .input.message{
+  height: 125px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  padding: 15px 15px;
+  resize: none;
+}
+
+form button{
+    width: 100%;
+    height: 50px;
+    background: white;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin-right: 100px;
+    transition: .9s;
+}
+
+form button:hover{
+    background: #007aff;
+    color: white;
+    transition: .9s;
+}
+
+
+
+.form-items{
+  position: relative;
+}
+
+
+@media(max-width: 768px){
+    .leftcolumn{
+width:90%;
+text-align: center;
+margin-left: 0;
+
+
+}
+    .leftcolumn iframe{
+width: 90%;
+    }
+.rightcolumn{
+width: 90%;
+text-align: center;
+position: relative;
+display:block ;
+    margin-left: 0;
+    margin-right: 30px;
+margin-bottom: 50px;
+}
+
+
+.contact-us{
+    width: 90%;
+margin-left: 0;
+    position: relative;
+}
+
+}
+
+
+

@@ -1,0 +1,512 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&family=Balsamiq+Sans:wght@400;700&family=Cinzel:wght@700&family=Courgette&family=Cutive&family=Fredoka+One&family=Indie+Flower&family=Itim&family=Kalam&family=Love+Ya+Like+A+Sister&family=Marcellus+SC&family=Merienda:wght@700&family=Roboto&family=Ubuntu&family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+}
+/*-------------------------------------------- navigation ------------------------------------------------*/
+.navbar {
+
+    background: #223047;
+}
+
+.navbar div {
+    display: none;
+}
+.navbar .toggle,
+.navbar .brand {
+    display: block;
+}
+.navbar .link {
+    display: block;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none;
+
+    color: white;
+}
+.navbar .link:hover,
+.navbar .link:active {
+    color: coral;
+    transition: 0.5s;
+
+}
+
+.navbar .brand {
+
+    width: 100%;
+    text-align: center;
+    padding: 2em;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 3px;
+
+    font-weight: bold;
+    color: white;
+}
+.navbar a {
+    text-decoration: none;
+}
+.navbar .toggle {
+    padding: 1em;
+    color: #00ffea;
+}
+.brand h3{
+
+    font-size: 35px;
+    color: #ffffff;
+    text-decoration-color: white;
+
+}
+.brand h5{
+
+    font-size: 25px;
+    text-align: center;
+
+
+}
+.navbar .brand span{
+    color: coral;
+    text-align: center;
+
+}
+.navbar .right{
+    font-family: 'Fredoka One', cursive;
+    letter-spacing: 2px;
+    text-align: center;
+
+
+}
+@media (min-width: 1080px) {
+    .navbar {
+        display: block;
+    }
+    .navbar .left,
+    .navbar .right {
+        display: flex;
+        flex:1;
+    }
+    .navbar .link {
+        width: 100%;
+    }
+    .navbar .right {
+        justify-content: flex-end;
+    }
+    .navbar .toggle {
+        display: none;
+    }
+}
+@media (min-width: 1080px) {
+    .navbar div {
+        display: flex;
+    }
+}
+
+@media (max-width: 1080em) {
+    .navbar.active .toggle {
+        background: #223047;
+        color: white;
+    }
+    .navbar .brand {
+        text-align: center;
+        width: 100%;
+        position: relative;
+    }
+    .navbar.active div {
+        display: block;
+    }
+    .navbar .brand h3,h5{
+        font-size: 30px;
+    }
+}
+
+/*```````````````````````````````~`navigation~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+  .container{
+      background: rgba(34, 48, 71, 0.17);
+      color: #223047;
+    width: 100%;
+    position: relative;
+    padding-top: 150px;
+      padding-bottom: 150px;
+
+
+    left: 0;
+    /*transform: translate(-50%,-50%);*/
+    text-align: center;
+
+  }
+  .container h1{
+    text-transform: uppercase;
+    font-size: 60px;
+    margin: 0px;
+    letter-spacing: 10px;
+      font-family: 'Cinzel', serif;
+  }
+  .container h2{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+
+      font-family:'Merienda', cursive;
+  }
+  .count{
+    margin: 40px 0;
+  }
+  .countd{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border: 2px solid;
+    margin: 0 30px;
+    font-size: 12px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  .countd span{
+    display: block;
+    font-size: 26px;
+    margin-top: 14px;
+      font-family:'Merienda', cursive;
+  }
+@media (max-width: 768px){
+    .container h1{
+font-size: 40px;
+    }
+
+}
+
+#footer{
+    padding:0;
+    margin: 0;
+    line-height: 1.5;
+}
+.container9{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    background: #223047;
+    color: coral;
+}
+
+
+
+#options9{
+    margin-top: 6%;
+    margin-bottom:0%;
+}
+
+.container9{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1.5rem;
+    padding-top: 50px;
+}
+
+.box9 img{
+    width: 15rem;
+}
+
+.box9 a{
+    color:white;
+    font-size: 20px;
+}
+
+.box9{
+    padding-top: 5px;
+
+    text-align: center;
+    /*box-shadow: 5px 0px 18px #888888;*/
+}
+.logoname{
+    width: 100%;
+    float: left;
+    padding: 2em;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: white;
+    line-height: 12px;
+}
+
+.logoname h5{
+    text-decoration: none;
+    font-size: 20px;
+    color: coral;
+}
+.box9 p{
+    text-align: center;
+    /* text-align: justify;*/
+    padding: 8px 5px 5px 8px;
+    font-size: 20px;
+    font-weight: 900;
+    color: coral;
+}
+
+@media (max-width: 768px) {
+    .logoname{
+        font-size: 15px;
+    }
+
+}
+
+
+/* media queries */
+@media(max-width: 768px){
+
+    #options9 .container9{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    #options9 .box9{
+        margin: 20px;
+    }
+
+}
+
+/*timeline*/
+.timeline{
+
+
+position: relative;
+box-sizing: border-box;
+margin:50px auto;
+padding:100px 0;
+width: 1000px;
+}
+.timeline:before{
+content:'';
+position: absolute;
+left:50%;
+width: 2px;
+height: 100%;
+background:#c5c5c5;
+}
+.timeline ul{
+margin: 0;
+padding: 0;
+
+}
+
+.timeline ul li{
+list-style: none;
+position: relative;
+width: 50%;
+padding:50px 40px;
+box-sizing: border-box;
+}
+.timeline ul li:nth-child(odd)
+{
+float: left;
+text-align: right;
+clear: both;
+}
+.timeline ul li:nth-child(even)
+{
+float: right;
+text-align: left;
+clear: both;
+}
+.content{
+padding-bottom: 20px;
+
+}
+.content h2{
+    color: #223047;
+}
+.timeline ul li:nth-child(odd):before{
+content: '';
+position: absolute;
+top:24px;
+right: -6px;
+width: 10px;
+height: 10px;
+background-color:#223047;
+border-radius: 50%;
+    color: white;
+box-shadow: 0 0 0 3px #33a0c1;
+}
+.timeline ul li:nth-child(even):before{
+  content: '';
+  position: absolute;
+  top:24px;
+  left: -4px;
+  width: 10px;
+  height: 10px;
+  background-color: #223047;
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px #71a3ff;
+  }
+
+  .timeline ul li h2{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    color: #223047;
+      font-family: 'Marcellus SC', serif;
+      }
+.timeline ul li h4{
+  margin: 10px 0 0 ;
+    font-family:'Kalam', cursive;
+    font-size: 20px;
+    padding: 0;
+}
+.timeline ul li .time h4{
+  margin: 0;
+padding: 0;
+font-size: 14px;
+    font-family: 'Merienda', cursive;
+}
+.timeline ul li:nth-child(odd) .time{
+position: absolute;
+top: 12px;
+right: -165px;
+margin:0;
+padding: 8px 16px;
+background: #223047;
+color: white;
+border-radius: 18px;
+box-shadow: 0 0 0 3px #99f8e2;
+}
+.timeline ul li:nth-child(even) .time{
+  position: absolute;
+  top: 12px;
+  left: -165px;
+  margin:0;
+  padding: 8px 16px;
+  background: #223047;
+  color:#fff;
+  border-radius: 18px;
+  box-shadow: 0 0 0 3px #7fb0ff;
+  }
+  @media(max-width: 1080px){
+.timeline{
+width: 100%;
+}
+      .timeline h4{
+          font-size: 10px;
+      }
+
+      .timeline ul li:nth-child(odd) .time{
+          right: 20px;
+      }
+      .timeline ul li:nth-child(even) .time{
+          left:20px
+      }
+  }
+
+
+
+.open-button {
+  background-color: #223047;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 1;
+  position:relative;
+  bottom: 100px;
+  right: 0px;
+    left: 30px;
+    outline: none;
+  width: 180px;
+    border-radius: 10px;
+    font-family: 'Varela Round', sans-serif;
+
+}
+
+
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 300px;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+.form-container .btn {
+  background-color: #223047;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+    border-radius: 10px;
+  opacity: 0.8;
+    font-family: 'Varela Round', sans-serif;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: coral;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+@media (max-width: 768px) {
+
+}
+
+
+/*--------------------------------------------Top button-----------------*/
+
+#myBtn1 {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+    opacity: 0.5;
+
+
+}
+
+#myBtn1:hover {
+  background-color: #223047;
+}
+
+#active{
+color:coral;
+}

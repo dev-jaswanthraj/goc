@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css\prayerreqest.css' %}">
+    <title>Prayer Request</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="home">
+        <a href="{% url 'home' %}"> <img src="{% static 'photo\sign.png' %}"></a>
+      </div>
+      <div class="head">
+          <h1><u><span>grace of </span>christ</u></h1><br>
+          <h2><span>jesus</span> ministry</h2>
+      </div>
+    </div>
+
+    <h1 style="text-align: center;">{{val}}</h1>
+    <form action="{% url 'prayer_save' %}" method="POST">
+      {% csrf_token %}
+      <div class="container-box">
+        <h1>PRAYER REQUEST</h1>
+        <label>NAME:</label><br><input type="text" name="name" placeholder="Enter Name" required><br>
+
+       <label>Prayer Request:</label> <br> <textarea name="request" placeholder="Prayer Request" required></textarea>
+
+        <h2>Response Through</h2>
+
+        <label>letter:</label><br><textarea name="address" placeholder="House No,Street Name,City Name,District Name,State Name,Pincode."></textarea>
+
+        <h2>Or</h2>
+
+        <label>Phone Number:<br></label><br><input type="phonenumber" name="number" placeholder="Enter Phone Number">
+
+        <h2>Or</h2>
+
+        <label>Email:<br></label><input type="email" name="email" placeholder="Enter Email"><br><br>
+
+        <button>Submit</button>
+      </div>
+    </form>
+
+  </body>
+</html>

@@ -1,0 +1,211 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Graceofchrist</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Grace of Christ">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="{% static 'css/contactus.css' %}">
+
+    <script>
+        function myFunction() {
+          alert("Save!! We will contact soo!");
+        }
+    </script>
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn1" title="Go to top"><img src="{% static 'photo\arrow.png'%}" id="top"></button>
+
+<div class="navbar">
+    <a href="#" class="toggle" id="navHamburger">
+        <i class="fas fa-bars"></i>
+    </a>
+    <a href="{% url 'home' %}" class="brand">
+        <h3><u>GRACE OF </u><span><u>CHRIST</u></span></h3>
+        <br><h5>JESUS <span>MINISTRY</span></h5>
+    </a>
+    <nav>
+        <div class="right">
+            <a href="{% url 'home' %}" class="link" >HOME</a>
+            <a href="{% url 'book' %}" class="link">BOOK</a>
+            <a href="{% url 'kids' %}" class="link">KIDS</a>
+            <a href="{% url 'event' %}" class="link">EVENT</a>
+            <a href="{% url 'prayer' %}" class="link">PRAYER</a>
+            <a href="{% url 'testimony' %}" class="link">TESTIMONY</a>
+            <a href="{% url 'galary' %}" class="link">GALLARY</a>
+            <a href="{% url 'contact_us' %}" class="link" id="active">CONTACT US</a>
+            <a href="#" class="link">DONATION</a>
+        </div>
+    </nav>
+</div>
+	<div class="leftcolumn">
+
+            <div class="card">
+                <article style="margin-top: 20px; line-height: 32px;">
+                    <h2><u>Offical Address</u></h2><br>
+                    <p>Sis.Sheela Vijayakumar,<br>
+                    “Grace of Christ Jesus Trust”<br>
+                    9A, Kanniga Nagar (Upstairs),<br>
+                    Kanda Konar Layout,<br>
+                    Kavundampalayam,<br>
+                    Coimbatore – 641030<br>
+                    Tamilnadu, India.
+                    </p>
+                </article>
+            </div>
+            <div class="card">
+                <article style="margin-top: 20px;">
+                    <h2><u>Call Us</u></h2><br>
+                    <p>Prayer Request:<br>
+                    (+91)95679-67895<br><br>
+                    Office Number:<br>
+                    780955777<br><br>
+                    Landline:<br>
+                    044-765667777</p>
+                </article>
+            </div>
+
+
+            <div class="card">
+                <article style="margin-top: 100px;">
+                    <h2><u>Email</u></h2><br><br>
+                    <p>graceofchrist@gmail.org</p><br>
+                    <p>graceofchrist@gmail.org</p><br>
+                </article>
+            </div>
+
+            <div class="card">
+                <article style="margin-top: 15px;">
+                    <h2><u>Location</u></h2>
+                    <br><p><iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15664.760645765211!2d76.91847402464884!3d11.024354874456122!2m
+                    3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba858cfc9593227%3A0x89f43e9cc7466eed!2sGrace%20of%20Christ%20Jesus%20
+                    Trust!5e0!3m2!1sen!2sin!4v1589432039421!5m2!1sen!2sin" width="300" height="250" frameborder="0" style="border:0;"
+                    allowfullscreen="" aria-hidden="false" tabindex="0"></iframe><p>
+                </article>
+            </div>
+
+
+
+    </div>
+    <div class="rightcolumn">
+        <div class="contact-us">
+        <div class="title">
+            <h1>Contact us</h1>
+        </div>
+        <div class="form">
+            <form action="{% url 'save' %}" method="POST">
+                {% csrf_token %}
+                <div class="form-items">
+                    <input type="text" class="input" placeholder="Username" name="name">
+
+                    </div>
+                    <div class="form-items">
+                    <input type="text" class="input" placeholder="Email" name = 'mail'>
+
+                    </div>
+                    <div class="form-items">
+                    <input type="text" class="input" placeholder="Phone Number" name = "number">
+
+                    </div>
+                    <div class="form-items">
+                    <textarea class="input message" cols="30" rows="10" name="mess" placeholder="Message....."></textarea>
+                    </div>
+                <button onclick="myFunction()">Submit</button>
+            </form>
+        </div>
+        </div>
+    </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+</div>
+    </div>
+
+<footer>
+    <section id="options9">
+        <div class="container9">
+            <!-- first box -->
+            <div class="box9">
+                <div class="logoname"><h3><u>GRACE OF CHRIST</u></h3><br><h5>JESUS MINISTRY</h5></div>
+
+                <h3 id = "color">Every word of God proves true;<br>
+                    he is a shield to those who take<br>
+                    refuge in him.<br>
+                    Proverbs 30:5<br>
+                </h3>
+            </div>
+            <!-- second box -->
+            <div class="box9">
+                <h3 style="color:white;">Want to know more?<br>
+                    24*7 Prayers<br>
+                    99442-54902 &<br>
+                    0422-2445255<br></h3>
+                <p id = "color">Follow Us</p>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <!-- third box -->
+            <div class="box9">
+                <h3 style="color:white;">ADDRESS</h3>
+                <h3 >Sis.Sheela Vijayakumar,<br>
+                    “Grace of Christ Jesus Trust”<br>
+                    9A, Kanniga Nagar (Upstairs),<br>
+                    Kanda Konar Layout,<br>
+                    Kavundampalayam,<br>
+                    Coimbatore – 641030<br>
+                    Tamilnadu, India.<br>
+                </h3>
+                <a href="{% url 'admin1' %}" style="color:#00000000;">admin1</a>
+            </div>
+
+        </div>
+    </section>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+    const navHamburger = document.querySelector('#navHamburger');
+    navHamburger.addEventListener('click', (e) => {
+        navHamburger.parentElement.classList.toggle('active');
+    })
+</script>
+<script>
+
+    var mybutton = document.getElementById("myBtn1");
+
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+</body>
+</html>

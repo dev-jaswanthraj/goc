@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&family=Balsamiq+Sans:wght@400;700&family=Cinzel:wght@700&family=Courgette&family=Cutive&family=Fredoka+One&family=Indie+Flower&family=Itim&family=Kalam&family=Love+Ya+Like+A+Sister&family=Marcellus+SC&family=Merienda:wght@700&family=Roboto&family=Ubuntu&family=Varela+Round&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    background:url( '/static/photo/prayback.jpg');
+}
+
+/*---------------------------------------------------header---------------------------------*/
+
+.head{
+    padding-top:30px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 15px;
+    color:#ff4400;
+    padding-left: 50px;
+    font-family: 'Cinzel', serif;
+}
+.home{
+
+    float: right;
+    padding-right: 50px;
+
+}
+.home img{
+    width: 7em;
+
+}
+.header{
+    margin: 0;
+    background: #223047;
+    width: 100%;
+    height:120px;
+}
+span{
+    color: white;
+}
+@media (max-width: 768px)
+{
+    .head{
+
+    }
+    .home img{
+        width: 5em;
+        margin-top: 10px;
+        margin-left: 20px;
+
+    }
+
+}
+/*```````````````````````````````~`navigation~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+:root {
+    counter-reset: question;
+}
+body {
+    background: white;
+
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
+}
+
+section#start {
+    text-align: center;
+    margin-top: 45vh;
+}
+.congrats {
+    font-weight: bold;
+    font-size: 110%;
+    color: orange;
+}
+
+
+
+fieldset {
+    width: 570px;
+    height: 550px;
+    color: white;
+    background: #0ecb89;
+
+
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 85px;
+    counter-increment: question;
+}
+section#start a:after {
+    /* content: " " counter(question); */
+}
+
+@media (max-width: 768px){
+fieldset{
+width:100%;
+
+}
+
+}
+fieldset legend {
+    position: absolute;
+    top: 10px;
+    font-size: 150%;
+}
+fieldset > div {
+    margin-top: 100px;
+}
+fieldset input:checked + label {
+    border-bottom: 2px solid #fddc9b;
+}
+fieldset label::after {
+    content: "\000A";
+    white-space: pre;
+    line-height: 2;
+}
+fieldset section {
+    position: absolute;
+    top: 365px;
+    width: calc(100% - 20px);
+}
+
+.message img {
+    float: right;
+    width: 150px;
+    margin: 0 10px;
+    border-radius: 5px;
+    margin-top: -45px;
+}
+.message a {
+    color: white;
+}
+.correct img {
+    margin-top: 0;
+}
+.correct p:first-of-type {
+    font-size: 110%;
+    color: greenyellow;
+    font-weight: bold;
+}
+.incorrect {
+    font-size: 110%;
+    color: orangered;
+    font-weight: bold;
+}
+
+fieldset .button-next {
+    position: absolute;
+    bottom: -70px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+a.button {
+    color: white;
+    background-color: #001845;
+    border-radius: 10px;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+a.button:hover {
+    background-color: #002855;
+}
+
+.message,
+.button-next {
+    display: none;
+}
+input:checked ~ section .incorrect {
+    display: block;
+}
+
+
+fieldset {
+    display: none;
+}
+fieldset:target {
+    display: block;
+}
+fieldset:target ~ section#start {
+    display: none;
+}
+
+
+/* Question 1 correct/incorrect answer rules */
+#q1d:checked ~ section .incorrect {
+    display: none;
+}
+#q1a:checked ~ section .incorrect_a,
+#q1c:checked ~ section .incorrect_c,
+#q1d:checked ~ section .correct,
+#q1d:checked ~ .button-next {
+    display: block;
+}
+
+
+/* Question 2 styles */
+fieldset#q2 {
+    height: 500px;
+    color: #ffeb74;
+    background-color: #ff1a1a;
+}
+fieldset#q2 input:checked + label {
+    border-bottom: 2px solid #713d12;
+}
+/* Question 2 correct/incorrect answer rules */
+#q2b:checked ~ section .incorrect {
+    display: none;
+}
+#q2a:checked ~ section .incorrect_a,
+#q2c:checked ~ section .incorrect_c,
+#q2b:checked ~ section .correct,
+#q2b:checked ~ .button-next {
+    display: block;
+}
+
+/* Question 3 styles */
+fieldset#q3 {
+    height: 470px;
+    color: #6d85b4;
+    background-color: #040613;
+}
+fieldset#q3 section {
+    top: 333px;
+}
+/* Question 3 correct/incorrect answer rules */
+fieldset#q3 input:checked + label {
+    border-bottom: 2px solid #ceeefc;
+}
+#q3b:checked ~ section .incorrect {
+    display: none;
+}
+#q3a:checked ~ section .incorrect_a,
+#q3c:checked ~ section .incorrect_c,
+#q3d:checked ~ section .incorrect_d,
+#q3e:checked ~ section .incorrect_e,
+#q3b:checked ~ section .correct,
+#q3b:checked ~ .button-next {
+    display: block;
+}
+/*-----------------------------------------------------------------FOOTER--------------------------------------------*/
+
+#footer{
+    padding:0;
+    margin: 0;
+    line-height: 1.5;
+}
+.container9{
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    background: #223047;
+    color: coral;
+}
+
+
+
+#options9{
+    margin-top: 6%;
+    margin-bottom:0%;
+}
+
+.container9{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 1.5rem;
+    padding-top: 50px;
+}
+
+.box9 img{
+    width: 15rem;
+}
+
+.box9 a{
+    color:white;
+    font-size: 20px;
+}
+
+.box9{
+    padding-top: 5px;
+
+    text-align: center;
+    /*box-shadow: 5px 0px 18px #888888;*/
+}
+.logoname{
+    width: 100%;
+    float: left;
+    padding: 2em;
+    font-family: 'Cinzel', serif;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: white;
+    line-height: 12px;
+}
+
+.logoname h5{
+    text-decoration: none;
+    color: coral;
+}
+.box9 p{
+    text-align: center;
+    /* text-align: justify;*/
+    padding: 8px 5px 5px 8px;
+    font-size: 20px;
+    font-weight: 900;
+    color: coral;
+}
+
+
+/* media queries */
+@media(max-width: 768px){
+
+    #options9 .container9{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    #options9 .box9{
+        margin: 20px;
+    }
+
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~FOOTER~~~~~~~~~~~~~~~~`````````````````````````*/
+
+#myBtn1 {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    opacity: 0.5;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+
+}
+
+#myBtn1:hover {
+    background-color: rgb(71, 33, 97);
+}
+
+#active{
+    color:coral;
+}

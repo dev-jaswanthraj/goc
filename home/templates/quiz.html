@@ -1,0 +1,205 @@
+{% load static %}
+<html lang="en" dir="ltr">
+<head>
+    <title>Graceofchrist</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Grace of Christ">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="{% static 'css/quiz.css' %}">
+</head>
+<body>
+
+<button onclick="topFunction()" id="myBtn1" title="Go to top"><img src="{% static 'photo\arrow.png'%}" id="top"></button>
+
+<div class="header">
+    <div class="home">
+        <a href="{% url 'home' %}"> <img src="{% static 'photo\sign.png' %}"></a>
+    </div>
+    <div class="head">
+        <h1><u><span>grace of </span>christ</u></h1><br>
+        <h2><span>jesus</span> ministry</h2>
+    </div>
+</div>
+<form>
+
+    <fieldset id="q1" >
+        <legend>1+1</legend>
+        <div>
+            <input type="radio" name="q1" id="q1a"> <label for="q1a">1</label>
+            <input type="radio" name="q1" id="q1b"> <label for="q1b">2</label>
+            <input type="radio" name="q1" id="q1c"> <label for="q1c">4</label>
+            <input type="radio" name="q1" id="q1d"> <label for="q1d">6</label>
+            <section>
+                <div class="message correct">
+
+                    <p>Steps</p>
+                    <p>1+1=2</p>
+                </div>
+                <p class="message incorrect">This is incorrect!</p>
+                <p class="message incorrect_a">
+
+                   hello
+                </p>
+                <p class="message incorrect_c">Alan Shepard was first man in space from USA.</p>
+            </section>
+            <p class="button-next"><a class="button" href="#q2">Next question</a></p>
+        </div>
+    </fieldset>
+
+    <fieldset id="q2">
+        <legend>1+1</legend>
+        <div>
+            <input type="radio" name="q2" id="q2a"> <label for="q2a">2</label>
+            <input type="radio" name="q2" id="q2b"> <label for="q2b">3</label>
+            <input type="radio" name="q2" id="q2c"> <label for="q2c">33</label>
+            <input type="radio" name="q2" id="q2d"> <label for="q2d">5</label>
+            <section>
+                <div class="message correct">
+
+                    <p>Steps</p>
+                    <p>1+1=2</p>
+                </div>
+                <p class="message incorrect">This is incorrect!</p>
+                <p class="message incorrect_a">
+
+                    But that would explain global warming...
+                </p>
+                <p class="message incorrect_c">Uranus would be on fire!</p>
+            </section>
+            <p class="button-next"><a class="button" href="#q3">Next question</a></p>
+        </div>
+    </fieldset>
+
+
+    <fieldset id="q3" >
+        <legend>What constellation is depicted<br> in the picture?</legend>
+        <div>
+            <input type="radio" name="q3" id="q3a"> <label for="q3a">Lyra</label>
+            <input type="radio" name="q3" id="q3b"> <label for="q3b">Libra</label>
+            <input type="radio" name="q3" id="q3c"> <label for="q3c">Cancer</label>
+            <input type="radio" name="q3" id="q3d"> <label for="q3d">Corvus</label>
+            <input type="radio" name="q3" id="q3e"> <label for="q3e">Capricornus</label>
+            <section>
+                <div class="message correct">
+
+                    <p>Hello</p>
+                </div>
+                <p class="message incorrect">This is incorrect!</p>
+                <p class="message incorrect_a">
+
+                    This is what Lyra looks like:
+                </p>
+                <p class="message incorrect_b">
+
+                    This is what Cancer looks like:
+                </p>
+                <p class="message incorrect_d">
+
+                    This is what Corvus looks like: <br>
+                    Awwww... So cute!
+                </p>
+                <p class="message incorrect_e">
+
+                    This is what Capricornus looks like:
+                </p>
+            </section>
+            <p class="button-next">
+                <span class="congrats">Congratulations, you have finished the quiz!</span>
+            </p>
+        </div>
+    </fieldset>
+
+
+
+
+    <section id="start">
+        <p class="button-start"><a class="button" href="#q1">Start the quiz</a></p>
+    </section>
+
+</form>
+<footer>
+    <section id="options9">
+        <div class="container9">
+            <!-- first box -->
+            <div class="box9">
+                <div class="logoname"><h3><u>GRACE OF CHRIST</u></h3><br><h5>JESUS MINISTRY</h5></div>
+
+                <h3 id = "color">Every word of God proves true;<br>
+                    he is a shield to those who take<br>
+                    refuge in him.<br>
+                    Proverbs 30:5<br>
+                </h3>
+            </div>
+            <!-- second box -->
+            <div class="box9">
+                <h3 style="color:white;">Want to know more?<br>
+                    24*7 Prayers<br>
+                    99442-54902 &<br>
+                    0422-2445255<br></h3>
+                <p id = "color">Follow Us</p>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <!-- third box -->
+            <div class="box9">
+                <h3 style="color:white;">ADDRESS</h3>
+                <h3 >Sis.Sheela Vijayakumar,<br>
+                    “Grace of Christ Jesus Trust”<br>
+                    9A, Kanniga Nagar (Upstairs),<br>
+                    Kanda Konar Layout,<br>
+                    Kavundampalayam,<br>
+                    Coimbatore – 641030<br>
+                    Tamilnadu, India.<br>
+                </h3>
+                <a href="{% url 'admin1' %}" style="color:#00000000;">admin1</a>
+            </div>
+
+        </div>
+    </section>
+</footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>
+    const navHamburger = document.querySelector('#navHamburger');
+    navHamburger.addEventListener('click', (e) => {
+        navHamburger.parentElement.classList.toggle('active');
+    })
+</script>
+<script>
+
+    var mybutton = document.getElementById("myBtn1");
+
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
+
+</html>
+
+

@@ -1,0 +1,20 @@
+@font-face{
+    font-family: Bitter;
+    src:url('../font/Bitter/Bitter-Bold.ttf');
+}
+@font-face{
+    font-family: Livvic;
+    src:url('../font/Livvic/Livvic.ttf');
+}
+@font-face{
+    font-family: Merriweather;
+    src:url('../font/Merriweather/Merriweather.ttf');
+}
+@font-face{
+    font-family: Playfair_Display;
+    src:url('../font/Playfair_Display/Playfair_Display.ttf');
+}
+@font-face{
+    font-family: Slabo_27px;
+    src:url('../font/Slabo_27px/Slabo_27px.ttf');
+}

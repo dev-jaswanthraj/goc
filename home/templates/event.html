@@ -1,0 +1,353 @@
+{% load static %}
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Grace of Christ">
+        <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+                crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Event</title>
+    <link rel="stylesheet" href="{% static 'css/event.css' %}">
+  </head>
+  <body>
+    <button onclick="topFunction()" id="myBtn1" title="Go to top"><img src="{% static 'photo\arrow.png'%}" id="top"></button>
+
+    <div class="navbar">
+        <a href="#" class="toggle" id="navHamburger">
+            <i class="fas fa-bars"></i>
+        </a>
+        <a href="{% url 'home' %}" class="brand"><h3><u>GRACE OF </u><span><u>CHRIST</u></span></h3><h5>JESUS <span>MINISTRY</span></h5></a>
+
+            <div class="right">
+                <a href="{% url 'home' %}" class="link" >HOME</a>
+                <a href="{% url 'book' %}" class="link">BOOK</a>
+                <a href="{% url 'kids' %}" class="link">KIDS</a>
+                <a href="{% url 'event' %}" class="link" id="active">EVENT</a>
+                <a href="{% url 'prayer' %}" class="link">PRAYER</a>
+                <a href="{% url 'testimony' %}" class="link">TESTIMONY</a>
+                <a href="{% url 'galary' %}" class="link">GALLARY</a>
+                <a href="{% url 'contact_us' %}" class="link">CONTACT US</a>
+                <a href="#" class="link">DONATION</a>
+            </div>
+
+    </div>
+
+    <div class="container">
+        <h1>Womens Meeting</h1>
+        <h2>9A, Kanniga Nagar (Upstairs),Kanda Konar Layout,Kavundampalayam</h2>
+        <h1>23 june 2020</h1>
+
+        <div class="count">
+          <div class="countd">
+            <span id="days">00</span>
+            <p>DAYS</p>
+          </div>
+
+          <div class="countd">
+            <span id="hours">00</span>
+              <p>HOURS</p>
+
+          </div>
+
+          <div class="countd">
+            <span id="minutes">00</span>
+            <p>MINUTES</p>
+          </div>
+
+          <div class="countd">
+            <span id="seconds">00</span>
+              <p>SECONDS</p>
+          </div>
+        </div>
+
+
+    </div>
+
+    <div class="timeline" >
+
+      <ul>
+        <li>
+          <div class="content">
+            <h2>Women Meeting</h2>
+              <h4>“Grace of Christ Jesus Trust” 9A, Kanniga Nagar (Upstairs),
+                  Kanda Konar Layout, Kavundam palayam, Coimbatore – 641030
+                  Tamilnadu, India.</h4>
+          </div>
+          <div class="time">
+            <h4>23 Mar 2020</h4>
+          </div>
+        </li>
+        <li>
+          <div class="content">
+            <h2>Women Meeting</h2>
+              <h4>“Grace of Christ Jesus Trust” 9A, Kanniga Nagar (Upstairs),
+                  Kanda Konar Layout, Kavundam palayam, Coimbatore – 641030
+                  Tamilnadu, India.</h4>
+          </div>
+          <div class="time">
+            <h4>23 Mar 2020</h4>
+          </div>
+        </li>
+        <li>
+          <div class="content">
+            <h2>camp Meeting</h2>
+              <h4>“Grace of Christ Jesus Trust” 9A, Kanniga Nagar (Upstairs),
+                  Kanda Konar Layout, Kavundam palayam, Coimbatore – 641030
+                  Tamilnadu, India.</h4>
+          </div>
+          <div class="time">
+            <h4>24 Mar 2020</h4>
+          </div>
+        </li>
+        <li>
+          <div class="content">
+            <h2>men Meeting</h2>
+              <h4>“Grace of Christ Jesus Trust” 9A, Kanniga Nagar (Upstairs),
+                  Kanda Konar Layout, Kavundam palayam, Coimbatore – 641030
+                  Tamilnadu, India.</h4>
+          </div>
+          <div class="time">
+            <h4>25 Mar 2020</h4>
+          </div>
+        </li>
+        <li>
+          <div class="content">
+            <h2>Women Meeting</h2>
+              <h4>“Grace of Christ Jesus Trust” 9A, Kanniga Nagar (Upstairs),
+                  Kanda Konar Layout, Kavundam palayam, Coimbatore – 641030
+                  Tamilnadu, India.</h4>
+          </div>
+          <div class="time">
+            <h4>23 Mar 2020</h4>
+          </div>
+        </li>
+<li>
+          <div class="content">
+            <h2>Women Meeting</h2>
+              <h4>“Grace of Christ Jesus Trust” 9A, Kanniga Nagar (Upstairs),
+                  Kanda Konar Layout, Kavundam palayam, Coimbatore – 641030
+                  Tamilnadu, India.</h4>
+          </div>
+          <div class="time">
+            <h4>23 Mar 2020</h4>
+          </div>
+        </li>
+<li>
+          <div class="content">
+            <h2>Women Meeting</h2>
+              <h4>“Grace of Christ Jesus Trust” 9A, Kanniga Nagar (Upstairs),
+                  Kanda Konar Layout, Kavundam palayam, Coimbatore – 641030
+                  Tamilnadu, India.</h4>
+          </div>
+          <div class="time">
+            <h4>23 Mar 2020</h4>
+          </div>
+        </li>
+<li>
+          <div class="content">
+            <h2>Women Meeting</h2>
+              <h4>“Grace of Christ Jesus Trust” 9A, Kanniga Nagar (Upstairs),
+                  Kanda Konar Layout, Kavundam palayam, Coimbatore – 641030
+                  Tamilnadu, India.</h4>
+          </div>
+          <div class="time">
+            <h4>23 Mar 2020</h4>
+          </div>
+        </li>
+<li>
+          <div class="content">
+            <h2>Women Meeting</h2>
+              <h4>“Grace of Christ Jesus Trust” 9A, Kanniga Nagar (Upstairs),
+                  Kanda Konar Layout, Kavundam palayam, Coimbatore – 641030
+                  Tamilnadu, India.</h4>
+          </div>
+          <div class="time">
+            <h4>23 Mar 2020</h4>
+          </div>
+        </li>
+<li>
+          <div class="content">
+            <h2>Women Meeting</h2>
+              <h4>“Grace of Christ Jesus Trust” 9A, Kanniga Nagar (Upstairs),
+                  Kanda Konar Layout, Kavundam palayam, Coimbatore – 641030
+                  Tamilnadu, India.</h4>
+          </div>
+          <div class="time">
+            <h4>23 Mar 2020</h4>
+          </div>
+        </li>
+<li>
+          <div class="content">
+            <h2>Women Meeting</h2>
+              <h4>“Grace of Christ Jesus Trust” 9A, Kanniga Nagar (Upstairs),
+                  Kanda Konar Layout, Kavundam palayam, Coimbatore – 641030
+                  Tamilnadu, India.</h4>
+          </div>
+          <div class="time">
+            <h4>23 Mar 2020</h4>
+          </div>
+        </li>
+<li>
+          <div class="content">
+            <h2>Women Meeting</h2>
+              <h4>“Grace of Christ Jesus Trust” 9A, Kanniga Nagar (Upstairs),
+                  Kanda Konar Layout, Kavundam palayam, Coimbatore – 641030
+                  Tamilnadu, India.</h4>
+          </div>
+          <div class="time">
+            <h4>23 Mar 2020</h4>
+          </div>
+        </li>
+<li>
+          <div class="content">
+            <h2>Women Meeting</h2>
+              <h4>“Grace of Christ Jesus Trust” 9A, Kanniga Nagar (Upstairs),
+                  Kanda Konar Layout, Kavundam palayam, Coimbatore – 641030
+                  Tamilnadu, India.</h4>
+          </div>
+          <div class="time">
+            <h4>23 Mar 2020</h4>
+          </div>
+        </li>
+        <div style="clear:both;"></div>
+      </ul>
+    </div>
+    <button class="open-button" onclick="openForm()">NOTIFY ME</button>
+
+    <div class="form-popup" id="myForm">
+        <form action="{% url 'notify' %}" method="POST" class="form-container">
+            {% csrf_token %}
+            <h1></h1>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="email" name="email">
+
+            <label for="text"><b>Phone Number</b></label>
+            <input type="text" placeholder="Phone number" name="psw" >
+
+            <button type="submit" class="btn">Submit</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+
+    <footer>
+        <section id="options9">
+            <div class="container9">
+                <!-- first box -->
+                <div class="box9">
+                    <div class="logoname"><h3><u>GRACE OF CHRIST</u></h3><br><h5>JESUS MINISTRY</h5></div>
+
+                    <h3 id = "">Every word of God proves true;<br>
+                        he is a shield to those who take<br>
+                        refuge in him.<br>
+                        Proverbs 30:5<br>
+                    </h3>
+                </div>
+                <!-- second box -->
+                <div class="box9">
+                    <h3 style="color:white;">Want to know more?<br>
+                        24*7 Prayers<br>
+                        99442-54902 &<br>
+                        0422-2445255<br></h3>
+                    <p id = "color">Follow Us</p>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <!-- third box -->
+                <div class="box9">
+                    <h3 style="color:white;">ADDRESS</h3>
+                    <h3 >Sis.Sheela Vijayakumar,<br>
+                        “Grace of Christ Jesus Trust”<br>
+                        9A, Kanniga Nagar (Upstairs),<br>
+                        Kanda Konar Layout,<br>
+                        Kavundampalayam,<br>
+                        Coimbatore – 641030<br>
+                        Tamilnadu, India.<br>
+                    </h3>
+                    <a href="{% url 'admin1' %}" style="color:#00000000;">admin1</a>
+                </div>
+
+            </div>
+        </section>
+    </footer>
+
+
+
+<script type="text/javascript">
+
+  var count = new Date("june 23,2020 00:01:00").getTime();
+  var x = setInterval(function() {
+    var now = new Date().getTime();
+    var d = count - now;
+
+    var days = Math.floor(d/(1000*60*60*24));
+    var hours = Math.floor((d%(1000*60*60*24))/(1000*60*60));
+    var minutes = Math.floor((d%(1000*60*60))/(1000*60));
+    var seconds = Math.floor((d%(1000*60))/1000);
+
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+
+
+
+    if(d <= 0){
+      clearInterval(x);
+    }
+  },1000);
+
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+</script>
+
+<script>
+  const navHamburger = document.querySelector('#navHamburger');
+  navHamburger.addEventListener('click', (e) => {
+      navHamburger.parentElement.classList.toggle('active');
+  })
+</script>
+<script>
+
+  var mybutton = document.getElementById("myBtn1");
+
+
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+  </script>
+
+
+
+  </body>
+</html>
